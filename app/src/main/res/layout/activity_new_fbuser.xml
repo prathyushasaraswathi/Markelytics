@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="You are few step away to become a Zippian"
+                    android:textColor="@color/color_wexpand"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/login_back"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:padding="5dp"
+                    android:textColorHint="@color/black"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/login_back"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textColorHint="@color/black" />
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Confirm Password"
+                     android:textColor="@color/black"
+                     android:layout_gravity="center_vertical"/>
+     -->
+                <EditText
+                    android:id="@+id/ed_confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/login_back"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/ed_postalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/login_back"
+                    android:hint="Postal Code"
+
+
+                    android:padding="5dp"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/ed_yrofBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/login_back"
+                    android:hint="Year of Birth"
+                    android:inputType="phone"
+                    android:maxLength="4"
+                    android:padding="5dp"
+                    android:digits="0123456789"
+                    android:textColorHint="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtfields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="All fields are mandatory."
+                    android:textColor="@color/red"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+
+                <com.andexert.library.RippleView xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ripple:rv_type="rectangle">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnJoin"
+                            android:layout_width="79dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/style_button"
+                            android:elevation="15dp"
+                            android:stateListAnimator="@null"
+                            android:text="JOIN"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

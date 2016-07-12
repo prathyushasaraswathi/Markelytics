@@ -1,0 +1,48 @@
+<resources >
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+   <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/header_color</item>
+    </style>
+
+
+    <color name="header_color">#0058ac</color>
+
+    <style name="Theme.NoTitle" parent="@android:style/Theme.NoTitleBar"></style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/color_wexpand</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/color_wexpand</item>
+
+    </style>
+
+</resources>
+

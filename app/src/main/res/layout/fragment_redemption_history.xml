@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            >
+
+            <TextView
+                android:id="@+id/txt_viewInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Redemption History"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+<!--
+        <RelativeLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_weight=".4"
+            android:background="@drawable/bg_two"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Points Credited"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+-->
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="Points"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+        </LinearLayout>-->
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.9">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarFadeDuration="0"
+                android:scrollbars="vertical"/>
+        </LinearLayout>-->
+        <RelativeLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_weight=".4"
+            android:background="@drawable/bg_two"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Points Redeemed"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="@color/color_wexpand"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:text="Description"
+                android:textColor="@color/color_wexpand"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="Points"
+                android:textColor="@color/color_wexpand"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewRedeem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarFadeDuration="0"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:id="@+id/txtNohstry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Redemption History"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

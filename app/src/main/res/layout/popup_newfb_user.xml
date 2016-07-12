@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:layout_marginLeft="20dip"
+              android:layout_marginRight="20dip"
+              android:layout_marginTop="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/style_panellist"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="You are few step away to become a Zippian"
+                android:textColor="@color/color_wexpand"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_back"
+                android:hint="Password"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:padding="5dp"
+                android:textColorHint="@color/black"
+                />
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Confirm Password"
+                 android:textColor="@color/black"
+                 android:layout_gravity="center_vertical"/>
+ -->
+            <EditText
+                android:id="@+id/ed_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_back"
+                android:hint="Confirm Password"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:padding="5dp"
+                android:textColorHint="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_postalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_back"
+                android:hint="Postal Code"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:padding="5dp"
+                android:textColorHint="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_yrofBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_back"
+                android:hint="Year of Birth"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:padding="5dp"
+                android:textColorHint="@color/black"
+                />
+
+            <com.andexert.library.RippleView
+                xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ripple:rv_type="rectangle"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnJoin"
+                        android:layout_width="79dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/style_button"
+                        android:elevation="15dp"
+                        android:stateListAnimator="@null"
+                        android:text="JOIN"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

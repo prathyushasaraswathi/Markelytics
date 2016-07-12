@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Zippy Opinion</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="app_id">1656761304539862</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tab_screen">TabScreenActivity</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_new_fbuser">NewFBUser</string>
+</resources>
